@@ -7,6 +7,7 @@ Release:	3
 License:	GPL
 Group:		X11/Applications
 Source0:	http://www.yty.net/h/gkrellm/fileread.c
+# Source0-md5:	c506c3745eba966e58560bbe32afe1df
 Patch0:		%{name}-ucgk.patch
 Patch1:		%{name}-small_fix.patch
 BuildRequires:	gkrellm-devel
