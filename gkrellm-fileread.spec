@@ -31,7 +31,7 @@ Um plugin GKrellM que lê um par '<rótulo> <valor>' de um arquivo e o
 mostra na tela. Pode ser usado para monitorar um valor qualquer
 colocado em um arquivo por outros processos.
 
-%prep -q
+%prep
 %setup -q -T -c -n %{name}
 cp -f %{SOURCE0} .
 %patch0
