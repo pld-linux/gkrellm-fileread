@@ -3,7 +3,7 @@ Summary(pl):	Plugin dla gkrellma do odczytu danych z pliku
 Summary(pt_BR):	Plugin gkrellm para monitoração de valores em arquivos
 Name:		gkrellm-fileread
 Version:	0.10.0
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Applications
 Source0:	http://www.yty.net/h/gkrellm/fileread.c
@@ -50,11 +50,11 @@ cp -f %{SOURCE0} .
 %install
 rm -rf $RPM_BUILD_ROOT
 
-install -D fileread.so %{buildroot}%{_libdir}/gkrellm/plugins/fileread.so
+install -D fileread.so %{buildroot}%{_libdir}/gkrellm/fileread.so
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/gkrellm/plugins/fileread.so
+%attr(755,root,root) %{_libdir}/gkrellm/fileread.so
