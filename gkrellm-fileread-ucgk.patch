@@ -1,0 +1,13 @@
+--- fileread.c	Wed Oct 11 14:13:37 2000
++++ fileread-new.c	Wed Oct 24 11:35:34 2001
+@@ -316,8 +316,8 @@
+ 			gkrellm_meter_textstyle(DEFAULT_STYLE/*gkrellm_lookup_meter_style_id(UPTIME_STYLE_NAME)*/);
+ 		ts = g_array_index(fileread_file_paths,item_t, i).fileread->textstyle;
+ 		w = gdk_string_width(ts->font, "Outside: -23.45") + 2;
+-		if (w > UC.chart_width - 2 * fileread_style.margin)
+-			w = UC.chart_width - 2 * fileread_style.margin;
++		if (w > GK.chart_width - 2 * fileread_style.margin)
++			w = GK.chart_width - 2 * fileread_style.margin;
+ 		
+ 
+ 		g_array_index(fileread_file_paths,item_t, i).decal_fileread = 
