@@ -40,11 +40,16 @@ cp %{_sourcedir}/fileread.c .
 %patch1
 
 %build
-%{__cc} %{rpmcflags} -Wall `gtk-config --cflags` `imlib-config --cflags-gdk` -shared -o fileread.so fileread.c `gtk-config --libs` `imlib-config --libs-gdk`
+%{__cc} %{rpmcflags} -Wall \
+	`gtk-config --cflags` \
+	`imlib-config --cflags-gdk` \
+	-shared -o fileread.so fileread.c \
+	`gtk-config --libs` \
+	`imlib-config --libs-gdk`
 
 %install
 rm -rf $RPM_BUILD_ROOT
-rm -rf %{buildroot}
+
 install -D fileread.so %{buildroot}%{_libdir}/gkrellm/plugins/fileread.so
 
 %clean
