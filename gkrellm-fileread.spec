@@ -1,9 +1,9 @@
 Summary:	file to krell plugin for gkrellm
-Summary(pl):	Plugin dla gkrellm'a do odczytu danych z pliku
+Summary(pl):	Plugin dla gkrellma do odczytu danych z pliku
 Summary(pt_BR):	Plugin gkrellm para monitoração de valores em arquivos
 Name:		gkrellm-fileread
 Version:	0.10.0
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications
 Source0:	http://www.yty.net/h/gkrellm/fileread.c
@@ -24,8 +24,8 @@ displays the value in a krell. It can be used to monitor any arbitrary
 values put in a file by external processes.
 
 %description -l pl
-Plugin dla GKrellM'a, który czyta pary '<etykieta> <warto¶æ>' z pliku
-oraz wy¶witla je w "krellu". Mo¿e byæ u¿yty do monitorowania
+Plugin dla GKrellMa, który czyta pary '<etykieta> <warto¶æ>' z pliku
+oraz wy¶wietla je w "krellu". Mo¿e byæ u¿yty do monitorowania
 jakichkolwiek warto¶ci z zewnêtrznych procesów.
 
 %description -l pt_BR
@@ -35,7 +35,7 @@ colocado em um arquivo por outros processos.
 
 %prep -q
 %setup -q -T -c -n %{name}
-cp %{_sourcedir}/fileread.c .
+cp -f %{SOURCE0} .
 %patch0
 %patch1
 
@@ -53,7 +53,7 @@ rm -rf $RPM_BUILD_ROOT
 install -D fileread.so %{buildroot}%{_libdir}/gkrellm/plugins/fileread.so
 
 %clean
-rm -rf %{buildroot}
+rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
