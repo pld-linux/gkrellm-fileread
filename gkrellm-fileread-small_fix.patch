@@ -1,0 +1,29 @@
+--- ./fileread.c.org	Thu Mar  7 17:33:45 2002
++++ ./fileread.c	Thu Mar  7 17:39:01 2002
+@@ -321,7 +321,7 @@
+ 		
+ 
+ 		g_array_index(fileread_file_paths,item_t, i).decal_fileread = 
+-			gkrellm_create_text_decal(g_array_index(fileread_file_paths,item_t, i).fileread, "Out: -53.24",
++			gkrellm_create_decal_text(g_array_index(fileread_file_paths,item_t, i).fileread, "Out: -53.24",
+ 						  ts, &fileread_style, -1, -1, w);
+ 
+ 		gkrellm_create_krell(g_array_index(fileread_file_paths,item_t, i).fileread, 
+@@ -491,7 +491,7 @@
+ 
+ /* File location tab */
+ 
+-        vbox = create_tab(tabs, "File locations");
++        vbox = gkrellm_create_tab(tabs, "File locations");
+ 	data_hbox = gtk_hbox_new(FALSE, 5);
+ 	btn_hbox = gtk_hbox_new(FALSE, 5);
+         fileread_path_entry = gtk_entry_new_with_max_length(255);
+@@ -554,7 +554,7 @@
+ 
+ /* Info tab */
+ 
+-        vbox = create_tab(tabs, "Info");
++        vbox = gkrellm_create_tab(tabs, "Info");
+         scrolled = gtk_scrolled_window_new(NULL, NULL);
+         gtk_scrolled_window_set_policy(GTK_SCROLLED_WINDOW(scrolled),
+                         GTK_POLICY_AUTOMATIC, GTK_POLICY_AUTOMATIC);
