@@ -1,4 +1,4 @@
-Summary:	file to krell plugin for gkrellm
+Summary:	File to krell plugin for gkrellm
 Summary(pl):	Plugin dla gkrellma do odczytu danych z pliku
 Summary(pt_BR):	Plugin gkrellm para monitoração de valores em arquivos
 Name:		gkrellm-fileread
@@ -15,7 +15,6 @@ BuildRequires:	gtk+-devel
 BuildRequires:	imlib-devel
 Requires:	gkrellm >= 1.0.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
 
 %description
 A GKrellM plugin that reads a '<label> <value>' pair from a file and
