@@ -1,6 +1,6 @@
 Summary:	File to krell plugin for gkrellm
-Summary(pl):	Plugin dla gkrellma do odczytu danych z pliku
-Summary(pt_BR):	Plugin gkrellm para monitoração de valores em arquivos
+Summary(pl.UTF-8):   Plugin dla gkrellma do odczytu danych z pliku
+Summary(pt_BR.UTF-8):   Plugin gkrellm para monitoraÃ§Ã£o de valores em arquivos
 Name:		gkrellm-fileread
 Version:	0.10.0
 Release:	3
@@ -21,13 +21,13 @@ A GKrellM plugin that reads a '<label> <value>' pair from a file and
 displays the value in a krell. It can be used to monitor any arbitrary
 values put in a file by external processes.
 
-%description -l pl
-Plugin dla GKrellMa, który czyta pary '<etykieta> <warto¶æ>' z pliku
-oraz wy¶wietla je w "krellu". Mo¿e byæ u¿yty do monitorowania
-jakichkolwiek warto¶ci z zewnêtrznych procesów.
+%description -l pl.UTF-8
+Plugin dla GKrellMa, ktÃ³ry czyta pary '<etykieta> <wartoÅ›Ä‡>' z pliku
+oraz wyÅ›wietla je w "krellu". MoÅ¼e byÄ‡ uÅ¼yty do monitorowania
+jakichkolwiek wartoÅ›ci z zewnÄ™trznych procesÃ³w.
 
-%description -l pt_BR
-Um plugin GKrellM que lê um par '<rótulo> <valor>' de um arquivo e o
+%description -l pt_BR.UTF-8
+Um plugin GKrellM que lÃª um par '<rÃ³tulo> <valor>' de um arquivo e o
 mostra na tela. Pode ser usado para monitorar um valor qualquer
 colocado em um arquivo por outros processos.
 
