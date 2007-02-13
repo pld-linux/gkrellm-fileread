@@ -1,6 +1,6 @@
 Summary:	File to krell plugin for gkrellm
-Summary(pl.UTF-8):   Plugin dla gkrellma do odczytu danych z pliku
-Summary(pt_BR.UTF-8):   Plugin gkrellm para monitoração de valores em arquivos
+Summary(pl.UTF-8):	Plugin dla gkrellma do odczytu danych z pliku
+Summary(pt_BR.UTF-8):	Plugin gkrellm para monitoração de valores em arquivos
 Name:		gkrellm-fileread
 Version:	0.10.0
 Release:	3
