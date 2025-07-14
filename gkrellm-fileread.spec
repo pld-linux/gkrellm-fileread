@@ -34,8 +34,8 @@ colocado em um arquivo por outros processos.
 %prep
 %setup -q -T -c -n %{name}
 cp -f %{SOURCE0} .
-%patch0
-%patch1
+%patch -P0
+%patch -P1
 
 %build
 %{__cc} %{rpmcflags} -Wall \
